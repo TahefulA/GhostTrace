@@ -1,0 +1,162 @@
+{
+  "id": "pmndrs_zustand_demo",
+  "timestamp": 1774300000000,
+  "repo": {
+    "owner": "pmndrs",
+    "repo": "zustand",
+    "subpath": ""
+  },
+  "meta": {
+    "owner": "pmndrs",
+    "repo": "zustand",
+    "fullName": "pmndrs/zustand",
+    "defaultBranch": "main",
+    "commitSha": "f948a31e892e8a1d0447fa0d2d3e5ebcb2a8310c",
+    "description": "Bear necessities for state management in React",
+    "stars": 49200,
+    "isFork": false,
+    "rateLimit": {
+      "remaining": 60,
+      "limit": 60,
+      "reset": 1774303600
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "use-sync-external-store@1.2.0",
+        "name": "use-sync-external-store",
+        "installedVersion": "1.2.0",
+        "depth": 1,
+        "isDirect": true,
+        "isDev": false,
+        "status": "patch-behind",
+        "riskScore": 12,
+        "blastRadius": 1,
+        "dependents": ["zustand"],
+        "dependencies": [],
+        "enrichment": {
+          "latestVersion": "1.2.2",
+          "isDeprecated": false,
+          "lastPublished": "2024-05-10T12:00:00.000Z",
+          "majorGap": 0,
+          "minorGap": 0,
+          "patchGap": 2
+        }
+      },
+      {
+        "id": "react@18.2.0",
+        "name": "react",
+        "installedVersion": "18.2.0",
+        "depth": 1,
+        "isDirect": true,
+        "isDev": true,
+        "status": "minor-behind",
+        "riskScore": 28,
+        "blastRadius": 4,
+        "dependents": [],
+        "dependencies": ["loose-envify@1.4.0"],
+        "enrichment": {
+          "latestVersion": "19.0.0",
+          "isDeprecated": false,
+          "lastPublished": "2024-12-05T18:30:00.000Z",
+          "majorGap": 1,
+          "minorGap": 0,
+          "patchGap": 0
+        }
+      },
+      {
+        "id": "typescript@5.3.3",
+        "name": "typescript",
+        "installedVersion": "5.3.3",
+        "depth": 1,
+        "isDirect": true,
+        "isDev": true,
+        "status": "minor-behind",
+        "riskScore": 15,
+        "blastRadius": 0,
+        "dependents": [],
+        "dependencies": [],
+        "enrichment": {
+          "latestVersion": "5.7.3",
+          "isDeprecated": false,
+          "lastPublished": "2025-01-14T20:00:00.000Z",
+          "majorGap": 0,
+          "minorGap": 4,
+          "patchGap": 0
+        }
+      },
+      {
+        "id": "loose-envify@1.4.0",
+        "name": "loose-envify",
+        "installedVersion": "1.4.0",
+        "depth": 2,
+        "isDirect": false,
+        "isDev": true,
+        "status": "up-to-date",
+        "riskScore": 5,
+        "blastRadius": 1,
+        "dependents": ["react@18.2.0"],
+        "dependencies": ["js-tokens@4.0.0"],
+        "enrichment": {
+          "latestVersion": "1.4.0",
+          "isDeprecated": false,
+          "lastPublished": "2018-04-18T10:00:00.000Z",
+          "majorGap": 0,
+          "minorGap": 0,
+          "patchGap": 0
+        }
+      },
+      {
+        "id": "js-tokens@4.0.0",
+        "name": "js-tokens",
+        "installedVersion": "4.0.0",
+        "depth": 3,
+        "isDirect": false,
+        "isDev": true,
+        "status": "up-to-date",
+        "riskScore": 3,
+        "blastRadius": 2,
+        "dependents": ["loose-envify@1.4.0"],
+        "dependencies": [],
+        "enrichment": {
+          "latestVersion": "4.0.0",
+          "isDeprecated": false,
+          "lastPublished": "2018-01-08T10:00:00.000Z",
+          "majorGap": 0,
+          "minorGap": 0,
+          "patchGap": 0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "react@18.2.0->loose-envify@1.4.0",
+        "source": "react@18.2.0",
+        "target": "loose-envify@1.4.0",
+        "isDev": true
+      },
+      {
+        "id": "loose-envify@1.4.0->js-tokens@4.0.0",
+        "source": "loose-envify@1.4.0",
+        "target": "js-tokens@4.0.0",
+        "isDev": true
+      }
+    ],
+    "truncated": false,
+    "totalNodeCount": 5,
+    "hasLockfile": true,
+    "directDepsCount": 3,
+    "transitiveDepsCount": 2
+  },
+  "stats": {
+    "total": 5,
+    "upToDate": 2,
+    "patchBehind": 1,
+    "minorBehind": 1,
+    "majorBehind": 1,
+    "deprecated": 0,
+    "vulnerable": 0,
+    "overallRiskScore": 16
+  }
+}
